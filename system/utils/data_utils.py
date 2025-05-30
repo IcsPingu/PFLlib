@@ -1,6 +1,6 @@
 import numpy as np
 import os
-import torch
+import torch # type: ignore
 from collections import defaultdict
 
 
@@ -35,6 +35,7 @@ def read_client_data(dataset, idx, is_train=True, few_shot=0):
                 shot_cnt_dict[label] += 1
         data_list = data_list_new
     return data_list
+
 
 def process_image(data):
     X = torch.Tensor(data['x']).type(torch.float32)

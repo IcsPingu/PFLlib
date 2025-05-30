@@ -1,12 +1,12 @@
 #!/usr/bin/env python
 import copy
-import torch
+import torch # type: ignore
 import argparse
 import os
 import time
 import warnings
 import numpy as np
-import torchvision
+import torchvision # type: ignore
 import logging
 
 from flcore.servers.serveravg import FedAvg
